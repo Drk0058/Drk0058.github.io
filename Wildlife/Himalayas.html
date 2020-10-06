@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.img1 { background-image: url("yak.jpg"); }
+.img2 { background-image: url("lepy.jpg"); }
+.img3 { background-image: url("parrot.jpg"); }
+
+.fg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.2); 
+  color: white;
+  
+  
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-0%, -0%);
+  z-index: 2;
+  width: 100%;
+  height: 35%;
+  text-align: center;
+  
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.bg-image:hover .overlay {
+  height: 50%;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+
+
+
+
+<div id="mySidenav" class="sidenav">
+    <a class="active" href="Home page wildlife.html">Home-Wildlife        </a>
+    <a href="Bay Of Bengal.html">        Bay Of Bengal    </a>
+    <a href="Himalayas.html">    Himalayas        </a>
+    <a href="Sunderbans.html">    Sunderbans      </a>
+    <a href="Thar Desert.html">    Thar Desert        </a>
+    <a href="Western Ghats.html">    Western Ghats        </a>
+</div>
+
+<div class="bg-text" id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<div class="fg-text">
+<h2>The Himalayas <br> Overview</h2>
+<strong>Himalayas, Nepali Himalaya, great mountain system of Asia forming a barrier between the Plateau of Tibet to the north and the alluvial plains of the Indian subcontinent to the south. The Himalayas include the highest mountains in the world, with more than 110 peaks rising to elevations of 24,000 feet (7,300 metres) or more above sea level. One of those peaks is Mount Everest (Tibetan: Chomolungma; Chinese: Qomolangma Feng; Nepali: Sagarmatha), the world’s highest, with an elevation of 29,035 feet (8,850 metres; see Researcher’s Note: Height of Mount Everest. The mountains’ high peaks rise into the zone of perpetual snow.
+For thousands of years the Himalayas have held a profound significance for the peoples of South Asia, as their literature, mythologies, and religions reflect. Since ancient times the vast glaciated heights have attracted the attention of the pilgrim mountaineers of India, who coined the Sanskrit name Himalaya—from hima (“snow”) and alaya (“abode”)—for that great mountain system. In contemporary times the Himalayas have offered the greatest attraction and the greatest challenge to mountaineers throughout the world.Found in middle elevations of 6,600 to 9,800 ft. in the eastern region are broadleaf and coniferous forests. These forests receive almost 80 inches of annual rainfall, mostly during the monsoon season. In addition to indigenous oaks and maples, plants like orchids, lichen, and ferns also grow in the area. A huge range of wildlife, including over 500 species of birds.</strong></div>
+<script>
+function openNav() {
+  
+    if (document.getElementById("mySidenav").style.width <= "0px")
+  {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+   } 
+  else if (document.getElementById("mySidenav").style.width === "250px")
+  {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+  
+  }
+  }
+</script>
+</body>
+</html>

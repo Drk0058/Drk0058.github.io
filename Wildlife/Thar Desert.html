@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.img1 { background-image: url("camel.jpg"); }
+.img2 { background-image: url("lij.jpg"); }
+.img3 { background-image: url("pipli.jpg"); }
+
+.fg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.2); 
+  color: white;
+  
+  
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-0%, -0%);
+  z-index: 2;
+  width: 100%;
+  height: 35%;
+  text-align: center;
+  
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.bg-image:hover .overlay {
+  height: 50%;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+
+
+
+
+<div id="mySidenav" class="sidenav">
+
+    <a class="active" href="Home page wildlife.html">Home-Wildlife        </a>
+    <a href="Bay Of Bengal.html">        Bay Of Bengal    </a>
+    <a href="Himalayas.html">    Himalayas        </a>
+    <a href="Sunderbans.html">    Sunderbans      </a>
+    <a href="Thar Desert.html">    Thar Desert        </a>
+    <a href="Western Ghats.html">    Western Ghats        </a>
+</div>
+
+<div class="bg-text" id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<div class="fg-text">
+<h2>The Great Indian Desert - Thar <br> Overview</h2>
+<strong>Great Thar Desert: The Great Indian Desert Thar lies mostly in the Royal Rajasthan states of India, and extended into the some portion of Haryana, punjab and Rann of Kutch in Gujrat. Thar desert covers eastern Sindh province and some area of Pakistan Punjab as well. The maximum area is covered in Rajasthan, India and total covers area is 208,110 km. It is said to be “The Great Indian Desert” is extending towards UP and MP as well. A camel safari into the Thar desert is an experience not to be missed for tourist. Best time to visit The Great Indian Desert is between Oct to March. The Desert National Park, Jaisalmer  has a collection of fossils of animals and plants of 180 million years old. Some fossils of Dinosaurs of 6 million years old have also been found in the area
+
+The Camel also known as “Ship of the desert” is the best way to explorer The Great Indian Desert. Evening of the state of maharajas, Rajasthan is most beautiful with awesome scenic view.Some wildlife species,which are about to extinct in other parts of India, are found here in large numbers,such as the Great Indian Bustard, the Blackbuck and the “Indian wild Ass”. The Desert National Park, Jaisalmer, spread over an area of 3162 km, is an excellent example of the ecosystem  of the Great Thar Desert. The golden fox,caracal,snakes,lizard are the few wild animal found in Thar desert region of India. </strong></div>
+<script>
+function openNav() {
+  
+    if (document.getElementById("mySidenav").style.width <= "0px")
+  {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+   } 
+  else if (document.getElementById("mySidenav").style.width === "250px")
+  {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+  
+  }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.img1 { background-image: url("dolphin.jpg"); }
+.img2 { background-image: url("quack.jpg"); }
+.img3 { background-image: url("lio.jpg"); }
+
+.fg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.2); 
+  color: white;
+  
+  
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-0%, -0%);
+  z-index: 2;
+  width: 100%;
+  height: 35%;
+  text-align: center;
+  
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.bg-image:hover .overlay {
+  height: 50%;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+
+
+
+
+<div id="mySidenav" class="sidenav">
+    <a class="active" href="Home page wildlife.html">Home-Wildlife        </a>
+    <a href="Bay Of Bengal.html">        Bay Of Bengal    </a>
+    <a href="Himalayas.html">    Himalayas        </a>
+    <a href="Sunderbans.html">    Sunderbans      </a>
+    <a href="Thar Desert.html">    Thar Desert        </a>
+    <a href="Western Ghats.html">    Western Ghats        </a>
+</div>
+
+<div class="bg-text" id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<div class="fg-text">
+<h2>Bay Of Bengal <br> Overview</h2>
+<strong>Bay of Bengal, large but relatively shallow embayment of the northeastern Indian Ocean, occupying an area of about 839,000 square miles (2,173,000 square km). It lies roughly between latitudes 5° and 22° N and longitudes 80° and 90° E. It is bordered by Sri Lanka and India to the west, Bangladesh to the north, and Myanmar (Burma) and the northern part of the Malay Peninsula to the east. According to the definition of the International Hydrographic Bureau, the southern boundary extends from Dondra Head at the southern end of Sri Lanka in the west to the northern tip of the Indonesian island of Sumatra in the east. The bay is about 1,000 miles (1,600 km) wide, with an average depth of more than 8,500 feet (2,600 metres). The maximum depth is 15,400 feet (4,694 metres). A number of large rivers—the Mahanadi, Godavari, Krishna, and Kaveri (Cauvery) on the west and the Ganges (Ganga) and Brahmaputra on the north—flow into the Bay of Bengal. The Andaman and Nicobar groups, which are the only islands, separate the bay from the Andaman Sea. </strong></div>
+<script>
+function openNav() {
+  
+    if (document.getElementById("mySidenav").style.width <= "0px")
+  {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+   } 
+  else if (document.getElementById("mySidenav").style.width === "250px")
+  {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+  
+  }
+  }
+</script>
+</body>
+</html>
