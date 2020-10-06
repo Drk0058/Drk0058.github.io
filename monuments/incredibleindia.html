@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Incredible India</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500i,700i" rel="stylesheet">
+  <style type="text/css">
+    .dropdown1{
+      width:150px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+    .dropdown1 a:hover{
+      background-color:teal;
+      color:white;
+      font-size: 15px;
+    }
+    a.nav-link.float{
+      float:right;
+      color:white;
+    }
+    .navbar-dark{
+      background-color:pink;
+    }
+    body{
+      background-color:   rgb(220,220,220);
+    }
+    .descript{
+      text-align: center;
+      margin-top:40px;
+    }
+    .descript h1{
+        font-size:50px;
+        color:red;
+    }
+    .descript p{
+      font-size: 25px;
+      color: rgb(50, 107, 151);
+      font-weight:bold;
+      font-family:'Roboto', sans-serif;
+      text-transform: uppercase;
+    }
+    .container2{
+        border: 2px solid black;
+        height: 553px;
+        width:190px;
+        background-color: rgb(230, 252, 200);
+    }
+    .container2 li{
+      font-weight: bold;
+    }
+    .text-center1{
+      font-size:30px;
+      background-color:red;
+      color:white;
+    }
+    .text-center2{
+      font-weight:bold;
+    }
+    .card-image{
+      height:200px;
+    }
+
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back h3{
+    margin-top:70px;
+}
+
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <a class="navbar-brand" href="#"><i class="fab fa-earlybirds"></i> OUR INDIA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ABOUT.html">ABOUT</a>
+      </li>  
+      <li class="nav-item dropdown" aria-haspopup="true" aria-expanded="false" >
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          CATEGORIES
+        </a>
+        <div class="dropdown-menu dropdown1"  aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">ADVENTURE</a>
+          <a class="dropdown-item" href="#">PHOTOGRAPHY</a>
+          <a class="dropdown-item" href="#">MONUMENTS</a>
+          <a class="dropdown-item" href="#">HOLY PLACES</a>
+          <a class="dropdown-item" href="#">WILDLIFE</a>
+          <a class="dropdown-item" href="#">ISLANDS</a>
+        </div>
+      </li>
+      </ul>
+        <a class="nav-link float dropdown-togglep" href="#">CONTACT US</a>
+  </div>
+</nav>
+<div class="row">
+<div class="container1 col-sm-12 col-md-9 ">
+  <div class="descript">
+    <h1>WELCOME TO INCREDIBLE INDIA</h1>
+    <p>
+      Explore India By Surprise!!
+    </p>
+    <p>
+      We Have Some Amazing Collection Of Divine Beauty Of India And Its Culture
+    </p>
+  </div>
+  <div class="row justify-content-around">
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="A.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+       <h3>“Look deep into nature, and then you will understand everything better.”</h3> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="g.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+        <h3>"Study nature, love nature, stay close to nature. It will never fail you.” </h3>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="t.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h3>“The silence of nature is very real. It surrounds you, you can feel it.” </h3>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="container2 col-sm-3 d-none d-md-block">
+  <h1 class="text-center text-center1">RECENT UPDATES</h1>
+  <marquee direction="up" scrollamount="4"
+  onmouseover="this.stop();"
+  onmouseout="this.start();">
+  <ol>
+    <li>Good news for biodiversity enthusiasts: Olive Ridley turtles arrive at Odisha’s Gahirmatha beach</li>
+    <li>Taj Festival 2019: A celebration of Indian culture and history in Agra!</li>
+    <li>Watch: Kerala Tourism new global brand campaign ‘Human by Nature’</li>
+    <li>Travel responsibly: Arrested Hampi vandals fined Rs 70,000 each, asked to help ASI with restoration work</li>
+    <li>Bhitarkanika National Park, Odisha: Watch world’s largest white crocodiles! Complete travel guide</li>
+    <li>Stunning! More than 1.2 million people attend Sharjah Light Festival</li>
+    <!--<li>Statue of Unity: Visiting hours increased by two hours to accommodate rush of tourists</li>
+    <li>Mumbai’s iconic Gateway of India to be restored and beautified</li>
+    <li>Kerala tourism ruling social media, becomes most sought after on Facebook with two million followers</li>-->
+  </ol></marquee>
+</div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

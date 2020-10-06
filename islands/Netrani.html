@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#pname{
+  opacity: 1;
+  transition: 2s opacity;
+  text-align: center;
+  font-size:32px;
+  z-index: 3;
+    position: fixed;
+
+	margin-top: 130px;
+	margin-right: 65%;
+    margin-left: 35%;
+  }
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  
+  height: 100%; 
+  
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.img1 { background-image: url("n1.jpg"); }
+.img2 { background-image: url("n2.jpg"); }
+.img3 { background-image: url("n3.jpg"); }
+
+.fg-text {
+  background-color: white; 
+  background-color: rgba(1,1,1, 0.4); 
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  
+  
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-0%, -0%);
+  z-index: 2;
+  width: 100%;
+  height: 35%;
+  
+  
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: .5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 5.0s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+.bg-image:hover .overlay {
+  height: 50%;
+}
+#main {
+  transition: margin-left .5s;
+
+}
+
+
+</style>
+</head>
+<body>
+<div id="pname"><pre><b><u><i>Netrani Island,
+ Murdeshwar,Karnataka</b></u></i></pre></div>
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+
+
+
+
+<div id="mySidenav" class="sidenav">
+    <a class="active" href="ihome.html">Home-islands</a>
+    <a href="Havelock.html">Havelock</a>
+    <a href="Netrani.html">Netrani Island</a>
+    <a href="Majuli.html">Majuli Island</a>
+    <a href="Munroe.html">Munroe Island</a>
+    <a href="Barren.html">Barren Island</a>
+</div>
+
+<div class="bg-text" id="main">
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<div class="fg-text" ><pre><b>Attractions:</b> People generally visit the island to experience the adventure sports especially scuba diving which starts at INR 5000 per dive.
+ The island also comprises of a ruined temple, a Roman Catholic church, and a mosque.  
+<b>Where To Stay:</b> There are a number of hotels near Netrani Island
+ including KSTDC Mayura Gerusoppa, Sagar Kinara Beach Resort, Kairali Residency, etc. 
+<b>How To Reach:</b> The island is located near the Arabian Sea and can be reached by hiring boats from Bhatkal.
+ Taxis, as well as auto-rickshaws too, are available from this place.
+ <b>Best Time To Visit:</b> December to January is the best time to visit the Netrani Island in Karnataka since one can go for scuba diving, snorkelling, 
+ and other water sports which are discouraged during June to September since the sea is rough during that time.  </div>
+</pre>
+<script>
+window.onload = function(){
+
+
+window.setTimeout(fadeout,1500);
+}
+function fadeout(){
+document.getElementById('pname').style.opacity = '0';
+}
+function openNav() {
+  
+    if (document.getElementById("mySidenav").style.width <= "0px")
+  {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+   } 
+  else if (document.getElementById("mySidenav").style.width === "250px")
+  {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+  
+  }
+}
+
+
+
+</script>
+</body>
+</html>
