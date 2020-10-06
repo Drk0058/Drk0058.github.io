@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+ height: 100%;
+
+  background-image: url("india-2-1.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            z-index: 3;
+        }
+
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            z-index: 3;
+        }
+         
+</style>
+</head>
+<body>
+
+    <div class="navbar">
+
+        <a href="home.html">HOME</a>
+        <a href="news.html">NEWS</a>
+
+        <a href="monuments/HOMEMUNUMENT.html">MONUMENTS</a>
+        <a href="fort/HOMEFORT.html">FORTS</a>
+        <a href="Hill Stations/Home page hill.html">HILL STATION</a>
+        <a href="Wildlife/Home page wildlife.html">WILDLIFE </a>
+        <a href="fests\fhome.html">FESTIVALS</a>
+        <a href="islands\ihome.html">ISLANDS</a>
+
+    </div>
+    <div class="row">
+        <div class="column">
+            <div><img src="i1x.jpeg" height="230px" width="340px" name="isl">Islands</div>
+        </div>
+        <div class="column">
+            <div><img src="i1.jpg" height="230px" width="340px" name="fests">Festivals</div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="column">
+            <div><img src="monuments/A.jpg" height="230px" width="340px" name="mnm">Monuments</div>
+        </div>
+        <div class="column">
+            <div><img src="Wildlife/omel.jpg" height="230px" width="340px" name="wld">Wildlife</div>
+        </div>
+
+    </div>
+    <div class="row">
+        
+        
+        <div class="column">
+            <div><img src="Hill Stations/ome.jpg" height="230px" width="340px" name="hls">Hill Stations</div>
+        </div>
+        <div class="column">
+            <div><img src="fort/A.jpg" height="230px" width="340px" name="frt">Forts</div>
+        </div>
+    </div>
+    <script>
+
+
+
+        var isl1 = new Image()
+        isl1.src = "h1.jpg"
+        var isl2 = new Image()
+        isl2.src = "b1.jpg"
+        var isl3 = new Image()
+        isl3.src = "n1.jpg"
+        var isl4 = new Image()
+        isl4.src = "ma1.jpg"
+        var isl5 = new Image()
+        isl5.src = "mu1.jpg"
+        var isl6 = new Image()
+        isl6.src = "i1x.jpeg"
+
+        var fst1 = new Image()
+        fst1.src = "h1x.jpg"
+        var fst2 = new Image()
+        fst2.src = "du1.jpg"
+        var fst3 = new Image()
+        fst3.src = "di1.jpg"
+        var fst4 = new Image()
+        fst4.src = "dr1.jpg"
+        var fst5 = new Image()
+        fst5.src = "e1.jpg"
+        var fst6 = new Image()
+        fst6.src = "i1.jpg"
+
+        var mnm1 = new Image()
+        mnm1.src = "monuments/A.jpg"
+        var mnm2 = new Image()
+        mnm2.src = "monuments/B.jpg"
+        var mnm3 = new Image()
+        mnm3.src = "monuments/C.jpg"
+        var mnm4 = new Image()
+        mnm4.src = "monuments/D.jpg"
+        var mnm5 = new Image()
+        mnm5.src = "monuments/E.jpg"
+        var mnm6 = new Image()
+        mnm6.src = "monuments/F.jpg"
+
+        var wld1 = new Image()
+        wld1.src = "Wildlife/omel.jpg"
+        var wld2 = new Image()
+        wld2.src = "Wildlife/dolphin.jpg"
+        var wld3 = new Image()
+        wld3.src = "Wildlife/yak.jpg"
+        var wld4 = new Image()
+        wld4.src = "Wildlife/Tiger_Sunderbans.jpg"
+        var wld5 = new Image()
+        wld5.src = "Wildlife/camel.jpg"
+        var wld6 = new Image()
+        wld6.src = "Wildlife/monk.jpg"
+
+        var frt1 = new Image()
+        frt1.src = "fort/A.jpg"
+        var frt2 = new Image()
+        frt2.src = "fort/B.jpg"
+        var frt3 = new Image()
+        frt3.src = "fort/C.jpg"
+        var frt4 = new Image()
+        frt4.src = "fort/D.jpeg"
+        var frt5 = new Image()
+        frt5.src = "fort/E.jpg"
+        var frt6 = new Image()
+        frt6.src = "fort/F.jpg"
+
+        var hls1 = new Image()
+        hls1.src = "Hill Stations/ome.jpg"
+        var hls2 = new Image()
+        hls2.src = "Hill Stations/train.jpg"
+        var hls3 = new Image()
+        hls3.src = "Hill Stations/jharna.jpg"
+        var hls4 = new Image()
+        hls4.src = "Hill Stations/hill.jpg"
+        var hls5 = new Image()
+        hls5.src = "Hill Stations/lake.jpg"
+        var hls6 = new Image()
+        hls6.src = "Hill Stations/Almora.jpg"
+    </script>
+
+    <script>
+        window.onload = function () {
+
+
+            window.setTimeout(throwdice, 800);
+        }
+        var x1 = 1;
+        var x2 = 1;
+        var x3 = 1;
+        var x4 = 1;
+        var x5 = 1;
+        var x6 = 1;
+        function throwdice() {
+
+            if (x1 <= 6) {
+                document.images["isl"].src = eval("isl" + x1 + ".src")
+                x1++;
+                if (x1 > 6) {
+                    x1 = 1;
+
+                }
+            }
+
+            if (x2 <= 6) {
+                document.images["fests"].src = eval("fst" + x2 + ".src")
+                x2++;
+            }
+            if (x2 > 6) {
+                x2 = 1;
+
+            }
+            if (x2 <= 6) {
+                document.images["hls"].src = eval("hls" + x2 + ".src")
+                x2++;
+            }
+            if (x2 > 6) {
+                x2 = 1;
+
+            }
+            if (x2 <= 6) {
+                document.images["wld"].src = eval("wld" + x2 + ".src")
+                x2++;
+            }
+            if (x2 > 6) {
+                x2 = 1;
+
+            }
+            if (x2 <= 6) {
+                document.images["frt"].src = eval("frt" + x2 + ".src")
+                x2++;
+            }
+            if (x2 > 6) {
+                x2 = 1;
+
+            }
+            if (x2 <= 6) {
+                document.images["mnm"].src = eval("mnm" + x2 + ".src")
+                x2++;
+            }
+            if (x2 > 6) {
+                x2 = 1;
+
+            }
+            window.setTimeout(throwdice, 800)
+        }
+
+    </script>
+    <script>
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

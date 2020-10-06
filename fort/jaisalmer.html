@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <link rel="icon" href="fevicon.png" type="png" sizes="16x16">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+ 
+  height: 100%; 
+  
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+.img2 { background-image: url("j1-copy.jpg"); }
+.img1 { background-image: url("ann_top_Jaisalmer_hkoTml.jpg"); }
+.img3 { background-image: url("awesome-jaisalmer-fort-jaisalmer-fort-5.jpg"); }
+
+
+
+.fg-text {
+  background-color: rgba(0,0,0, 0.2); 
+  color: white;
+
+  
+  
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-0%, -0%);
+  z-index: 2;
+  width: 100%;
+  height: 35%;
+  text-align: center;
+  
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: .5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.bg-image:hover .overlay {
+  height: 50%;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+
+
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="HOMEFORT.html"> HOME FORT</a>
+    <a href="agrafort.html">AGRA FORT</a>
+    <a href="golcondafort.html">GOLCONDA FORT</a>
+    <a href="gwaliorfort.html">GWALIOR FORT</a>
+    <a href="jaisalmer.html">JAISALMER FORT</a>
+    <a href="redfort.htmL">RED FORT</a>
+</div>
+
+<div class="bg-text" id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span>
+</div>
+<div class="fg-text" >
+<h2>Jaisalmer fort, Jaisalmer <br> Overview</h2>
+<strong>
+Jaisalmer Fort maintains a silent vigil in the far northwestern corner of Rajasthan, India's desert state. Although the local airport is closed to commercial<br> traffic, nearly half a million visitors somehow make their way to the fortress each year, even though it sits uncomfortably close to a contested border<br> with India's longtime adversary Pakistan.
+
+The pilgrims follow a 400-mile-long road from Jaipur.<br> They drive through fierce desert winds that blow all the way to Delhi. In summer, they endure 105-degree heat.<br> They come to an area where, for the past 2,000 years, water has been in short supply.
+
+They come because there is no other place on earth like Jaisalmer.
+Built in 1156 by the Indian King Rawal Jaisal, the fort is on a site that legend says he chose on the advice of a wise local hermit. <br>In the Indian epic poem the Mahabharata, the mystic tells Jaisal that the Hindu deity Lord Krishna had praised<br> the spot—and therefore, a fort built there would be almost invisible to the king's enemies. 
+</strong></div>
+<script>
+
+function openNav() {
+  
+    if (document.getElementById("mySidenav").style.width <= "0px")
+  {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+   } 
+  else if (document.getElementById("mySidenav").style.width === "250px")
+  {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+  
+  }
+}
+
+
+
+</script>
+</body>
+</html>

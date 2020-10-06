@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.bg-image {
+ 
+  height: 100%; 
+  
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.img1 { background-image: url("agra-fort-agra-monuments-agra-red-fort-1313250.jpg");}
+.img2 { background-image: url("Agra-Fort-(India).jpg"); }
+.img3 { background-image: url("Taj-Mahal-india-610860_1024_768.jpg"); }
+
+
+.fg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.2); 
+  color: white;
+
+  
+  
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-0%, -0%);
+  z-index: 2;
+  width: 100%;
+  height: 12%;
+  text-align: center;
+  transition: height 1.5s;
+}
+
+.fg-text:hover{
+  height:33%;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: .5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.bg-image:hover .overlay {
+  height: 50%;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.title{
+  
+  position:relative;
+  text-align:center;
+  color:rgba(0,0,0, 0.8);
+  font-size:80px;
+}
+
+</style>
+</head>
+<body onload = "a()">
+<div class="bg-image img1">
+</div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+
+
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="HOMEFORT.html"> HOME FORT</a>
+    <a href="agrafort.html">AGRA FORT</a>
+    <a href="golcondafort.html">GOLCONDA FORT</a>
+    <a href="gwaliorfort.html">GWALIOR FORT</a>
+    <a href="jaisalmer.html">JAISALMER FORT</a>
+    <a href="redfort.htmL">RED FORT</a>
+</div>
+
+<div class="bg-text" id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span>
+</div>
+<div class="fg-text" >
+  <!--- <h1 class="title">AGRA FORT</h1>--->
+<h2>Agra Fort , Agra <br> Overview</h2>
+<strong>
+An era marked by invasions and fortifications, where power was symbolized by grand palaces and grander forts………during such time was built THE AGRA FORT.<br>
+
+Fortification has always been and still is the prerogative of the mighty; the dividing line between the ruler and the ruled.<br>
+
+The mighty towers and overwhelming facades instilling fear and awe in the bravest of the brave…….yet there were the few who overcame the daunting adversities and made their mark in history, a signature ……. that still exists.<br>
+Structures built as a sign of prowess remind us all of the grit and valour of the brave men and women who captured, destroyed and built such overwhelming edifices.<br>
+
+The Agra Fort, also known as the “Lal –Qila”, “Fort Rouge” or “Qila-i-Akbari”, is the highlight of the city of Agra, then capital of the Mughal Sultanate.<br>
+
+A symbol of power, strength and resilience, as it stands today in full glory.<br>
+
+  
+</strong>
+
+</div>
+<script>
+
+function openNav() {
+  
+    if (document.getElementById("mySidenav").style.width <= "0px")
+  {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+   } 
+  else if (document.getElementById("mySidenav").style.width === "250px")
+  {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+}
+
+function a(){
+  setTimeout(function(){
+    document.querySelector('.title').textContent = ' ';
+  },3000)
+  }
+
+
+</script>
+</body>
+</html>

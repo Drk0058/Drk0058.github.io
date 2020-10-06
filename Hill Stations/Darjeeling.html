@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.img1 { background-image: url("train.jpg"); }
+.img2 { background-image: url("pahad.jpg"); }
+.img3 { background-image: url("step.jpg"); }
+
+.fg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.2); 
+  color: white;
+  
+  
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-0%, -0%);
+  z-index: 2;
+  width: 100%;
+  height: 35%;
+  text-align: center;
+  
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.bg-image:hover .overlay {
+  height: 50%;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+
+
+
+
+<div id="mySidenav" class="sidenav">
+    <a class="active" href="Home page hill.html">Home-Hill Stations        </a>
+    <a href="Darjeeling.html">    Darjeeling        </a>
+    <a href="Ooty.html">    Ooty        </a>
+    <a href="Manali.html">    Manali        </a>
+    <a href="Gulmarg.html">    Gulmarg        </a>
+    <a href="Dalhousie.html">    Dalhousie        </a>
+</div>
+
+<div class="bg-text" id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<div class="fg-text">
+<h2>Darjeeling<br> Overview</h2>
+<strong>Jaw-dropping locales, mesmerising sunrises, the untouched beauty of the hills, the old-world charm of the past, and the welcoming smiles of the local people all add up to make Darjeeling one of the most beautiful hill stations in Eastern part of India. Spread over a steep mountain ridge, nestled amidst acres of lush green tea plantations, Darjeeling stands at the height of 2,050 meters above sea level, thus boasting of cool climes all year round. This scenic hill station is the perfect getaway for a romantic honeymoon and is just around 700 kilometres away from Kolkata.
+
+A respite from the hot and humid summers of India, Darjeeling is a popular tourist destination in North -East India. Providing a heady mixture of splendid tea gardens on rolling mountain slopes, meandering toy train rides through the picturesque city, and delectable traditional Tibet an cuisine, Darjeeling works wonders to cater to the gorgeous panorama of the Himalayas.</strong></div>
+<script>
+function openNav() {
+  
+    if (document.getElementById("mySidenav").style.width <= "0px")
+  {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+   } 
+  else if (document.getElementById("mySidenav").style.width === "250px")
+  {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+  
+  }
+  }
+</script>
+</body>
+</html>
+
+

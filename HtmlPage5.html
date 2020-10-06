@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+
+
+        var isl1 = new Image()
+        isl1.src = "h1.jpg"
+        var isl2 = new Image()
+        isl2.src = "b1.jpg"
+        var isl3 = new Image()
+        isl3.src = "n1.jpg"
+        var isl4 = new Image()
+        isl4.src = "ma1.jpg"
+        var isl5 = new Image()
+        isl5.src = "mu1.jpg"
+        var isl6 = new Image()
+        isl6.src = "i1x.jpeg"
+
+        var fst1 = new Image()
+        fst1.src = "h1x.jpg"
+        var fst2 = new Image()
+        fst2.src = "du1.jpg"
+        var fst3 = new Image()
+        fst3.src = "di1.jpg"
+        var fst4 = new Image()
+        fst4.src = "dr1.jpg"
+        var fst5 = new Image()
+        fst5.src = "e1.jpg"
+        var fst6 = new Image()
+        fst6.src = "i1.jpg"
+
+        var mnm1 = new Image()
+        mnm1.src = "h1.jpg"
+        var mnm2 = new Image()
+        mnm2.src = "b1.jpg"
+        var mnm3 = new Image()
+        mnm3.src = "n1.jpg"
+        var mnm4 = new Image()
+        mnm4.src = "ma1.jpg"
+        var mnm5 = new Image()
+        mnm5.src = "mu1.jpg"
+        var mnm6 = new Image()
+        mnm6.src = "i1x.jpeg"
+
+        var wld1 = new Image()
+        wld1.src = "h1.jpg"
+        var wld2 = new Image()
+        wld2.src = "b1.jpg"
+        var wld3 = new Image()
+        wld3.src = "n1.jpg"
+        var wld4 = new Image()
+        wld4.src = "ma1.jpg"
+        var wld5 = new Image()
+        wld5.src = "mu1.jpg"
+        var wld6 = new Image()
+        wld6.src = "i1x.jpeg"
+
+        var frt1 = new Image()
+        frt1.src = "h1.jpg"
+        var frt2 = new Image()
+        frt2.src = "b1.jpg"
+        var frt3 = new Image()
+        frt3.src = "n1.jpg"
+        var frt4 = new Image()
+        frt4.src = "ma1.jpg"
+        var frt5 = new Image()
+        frt5.src = "mu1.jpg"
+        var frt6 = new Image()
+        frt6.src = "i1x.jpeg"
+
+        var hls1 = new Image()
+        hls1.src = "h1.jpg"
+        var hls2 = new Image()
+        hls2.src = "b1.jpg"
+        var hls3 = new Image()
+        hls3.src = "n1.jpg"
+        var hls4 = new Image()
+        hls4.src = "ma1.jpg"
+        var hls5 = new Image()
+        hls5.src = "mu1.jpg"
+        var hls6 = new Image()
+        hls6.src = "i1x.jpeg"
+    </script>
+
+    
+
+    <div class="row">
+        <div class="column">
+            <div><img src="i1x.jpeg" height="100px" width="100px" name="isl">Islands</div>
+        </div>
+        <div class="column">
+            <div><img src="i1.jpg" height="100px" width="100px" name="fests">Festivals</div>
+        </div>
+        <div class="column">
+            <div><img src="default.png" height="100px" width="100px" name="mnm">Monuments</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div><img src="i1x.jpeg" height="100px" width="100px" name="wld">Wildlife</div>
+        </div>
+        <div class="column">
+            <div><img src="i1.jpg" height="100px" width="100px" name="hls">Hill Stations</div>
+        </div>
+        <div class="column">
+            <div><img src="default.png" height="100px" width="100px" name="frt">Forts</div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+
+
+            window.setTimeout(throwdice, 800);
+        }
+        var x1 = 1;
+        var x2 = 1;
+        var x3 = 1;
+        var x4 = 1;
+        var x5 = 1;
+        var x6 = 1;
+        function throwdice() {
+
+            if (x1 <= 6) {
+                document.images["isl"].src = eval("isl" + x1 + ".src")
+                x1++;
+                if (x1 > 6) {
+                    x1 = 1;
+
+                }
+            }
+
+            if (x2 <= 6) {
+                document.images["fests"].src = eval("fst" + x2 + ".src")
+                x2++;
+            }
+            if (x2 > 6) {
+                x2 = 1;
+
+            }
+            if (x2 <= 6) {
+                document.images["hls"].src = eval("hls" + x2 + ".src")
+                x2++;
+            }
+            if (x2 > 6) {
+                x2 = 1;
+
+            }
+            if (x2 <= 6) {
+                document.images["wld"].src = eval("wld" + x2 + ".src")
+                x2++;
+            }
+            if (x2 > 6) {
+                x2 = 1;
+
+            }
+            if (x2 <= 6) {
+                document.images["frt"].src = eval("frt" + x2 + ".src")
+                x2++;
+            }
+            if (x2 > 6) {
+                x2 = 1;
+
+            }
+            if (x2 <= 6) {
+                document.images["mnm"].src = eval("mnm" + x2 + ".src")
+                x2++;
+            }
+            if (x2 > 6) {
+                x2 = 1;
+
+            }
+            window.setTimeout(throwdice, 800)
+        }
+
+    </script>
+</body>
+</html>

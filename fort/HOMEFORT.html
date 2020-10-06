@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        .topnav {
+  overflow: hidden;
+  background-color: #000000;
+  opacity: 0.8;
+  width: 0px;
+  height: 40px;
+  position: fixed;
+}
+
+.topnav a {
+  float: left;
+  color: #2424db;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+
+}
+
+.topnav a:hover {
+  background-color: #00ff00;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #db2424	;
+  color: white;
+}
+        .progress-container {
+            width: 100%;
+            height: 7px;
+            background: #000000;
+            z-index: 3;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .progress-bar {
+            height: 5px;
+            background: #2424db;
+            width: 0%;
+            z-index: 3;
+            bottom: 0;
+        }
+
+        body, html {
+            background-color: black;
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .heads {
+            opacity: 0;
+            transition:  opacity;
+            
+            font-size: 44px;
+            z-index: 3;
+            position: fixed;
+            margin-top: 80px;
+            margin-left: 78%;
+         
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg-image {
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+         
+        .bimg {
+            background-image: url("A.jpg");
+        }
+        .img1 {
+            background-image: url("B.jpg");
+        }
+
+        .img2 {
+            background-image: url("C.jpg");
+        }
+
+        .img3 {
+            background-image: url("D.jpeg");
+           
+        }
+
+        .img4 {
+            background-image: url("E.jpg");
+        }
+
+        .img5 {
+            background-image: url("F.jpg");
+        }
+
+
+       
+
+             
+
+        .bg-image:hover .overlay {
+            height: 50%;
+        }
+
+        
+       .bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0); 
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  
+  position: fixed;
+  top: 9px;
+  left: 15px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 150px;
+  
+  text-align: center;
+  
+}
+    </style>
+</head>
+<body>
+    <div class="topnav" id="s">
+        <a class="active" href="C:/Users/DELL/Desktop/webd/home.html">Home</a>
+        <a class="active" href="HOMEFORT.html"> HOME FORT</a>
+        <a href="agrafort.html">AGRA FORT</a>
+        <a href="golcondafort.html">GOLCONDA FORT</a>
+        <a href="gwaliorfort.html">GWALIOR FORT</a>
+        <a href="jaisalmer.html">JAISALMER FORT</a>
+        <a href="redfort.htmL">RED FORT</a>
+    </div>
+
+    <div class="heads" id="pname">
+        <pre><b><u><i>FORTS IN INDIA</b></u></i></pre>
+    </div>
+    <div class="heads" id="hd1">
+        <pre><b><u><i>AGRA FORT</b></u></i></pre>
+    </div>
+    <div class="heads" id="hd2">
+        <pre><b><u><i>GOLCONDA FORT</b></u></i></pre>
+    </div>
+    <div class="heads" id="hd3">
+        <pre><b><u><i>GWALIOR FORT</b></u></i></pre>
+    </div>
+    <div class="heads" id="hd4">
+        <pre><b><u><i>JAISALMER FORT</b></u></i></pre>
+    </div>
+    <div class="heads" id="hd5">
+        <pre><b><u><i>RED FORT</b></u></i></pre>
+    </div>
+    <div id="bimg" class="bg-image bimg"></div>
+    <div id="img1" class="bg-image img1"></div>
+    <div id="img2" class="bg-image img2"></div>
+    <div id="img3" class="bg-image img3"></div>
+    <div id="img4" class="bg-image img4"></div>
+    <div id="img5" class="bg-image img5"></div>
+<div class="bg-text" id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" ><img src="m2.png" height="40 px" width="40px" ></span>
+</div>
+
+
+
+
+    <script>
+        window.onload = function () {
+
+
+            window.setTimeout(fadeout, 1500);
+        }
+        function fadeout() {
+            document.getElementById('pnacme').style.opacity = '0';
+        }
+        function openNav() {
+
+            if (document.getElementById("s").style.width <= "0px") {
+                document.getElementById("s").style.width = "96%";
+                document.getElementById("main").style.marginLeft = "96%";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+            else if (document.getElementById("s").style.width > "0px") {
+                document.getElementById("s").style.width = "0px";
+                document.getElementById("main").style.marginTop = "0px";
+                document.getElementById("main").style.marginLeft = "0";
+                document.body.style.backgroundColor = "white";
+
+            }
+        }
+        window.onscroll = function () { scroll() };
+
+        function scroll() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+
+            document.getElementById("main").style.marginLeft = scrolled + "%";
+            document.getElementById("s").style.width = scrolled + "%";
+            document.getElementById("bimg").style.width = 100 + 2 * scrolled + "%";
+            document.getElementById("img1").style.width = 100 + 1.7 * scrolled + "%";
+            document.getElementById("img2").style.width = 100 + 1.5 * scrolled + "%";
+            document.getElementById("img3").style.width = 100 + 1 * scrolled + "%";
+            document.getElementById("img4").style.width = 100 + .5 * scrolled + "%";
+            document.getElementById("img5").style.width = 100 + .2 * scrolled + "%";
+            if (scrolled <= 7.9 && scrolled >= 0) {
+                document.getElementById('pname').style.opacity = (scrolled - 0.2) * 12 / 100;
+            }
+            if (scrolled <= 15.9 && scrolled >= 8.1) {
+                document.getElementById('pname').style.opacity = (15.8 - scrolled) * 12 / 100;
+            }
+            if (scrolled >= 16) {
+                document.getElementById('pname').style.opacity = 0;
+            }
+            if (scrolled <= 16) {
+                document.getElementById('hd1').style.opacity = 0;
+            }
+            if (scrolled <= 23.9 && scrolled >= 16.1) {
+                document.getElementById('hd1').style.opacity = (scrolled - 16.2) * 12 / 100;
+            }
+            if (scrolled <= 31.9 && scrolled >= 24.1) {
+                document.getElementById('hd1').style.opacity = (31.8 - scrolled) * 12 / 100;
+            }
+            if (scrolled >= 32) {
+                document.getElementById('hd1').style.opacity = 0;
+            }
+            if (scrolled <= 32) {
+                document.getElementById('hd2').style.opacity = 0;
+            }
+            if (scrolled <= 39.9 && scrolled >= 32.1) {
+                document.getElementById('hd2').style.opacity = (scrolled - 32.2) * 12 / 100;
+            }
+            if (scrolled <= 47.9 && scrolled >= 40.1) {
+                document.getElementById('hd2').style.opacity = (47.8 - scrolled) * 12 / 100;
+            }
+            if (scrolled >= 48) {
+                document.getElementById('hd2').style.opacity = 0;
+            }
+            if (scrolled <= 48) {
+                document.getElementById('hd3').style.opacity = 0;
+            }
+            if (scrolled <= 55.9 && scrolled >= 48.1) {
+                document.getElementById('hd3').style.opacity = (scrolled - 48.2) * 12 / 100;
+            }
+            if (scrolled <= 63.9 && scrolled >= 56.1) {
+                document.getElementById('hd3').style.opacity = (63.8 - scrolled) * 12 / 100;
+            }
+            if (scrolled >= 64) {
+                document.getElementById('hd3').style.opacity = 0;
+            }
+            if (scrolled <= 64) {
+                document.getElementById('hd4').style.opacity = 0;
+            }
+            if (scrolled <= 71.9 && scrolled >= 64.1) {
+                document.getElementById('hd4').style.opacity = (scrolled - 64.2) * 12 / 100;
+            }
+            if (scrolled <= 79.9 && scrolled >= 72.1) {
+                document.getElementById('hd4').style.opacity = (79.8 - scrolled) * 12 / 100;
+            }
+            if (scrolled >= 80) {
+                document.getElementById('hd4').style.opacity = 0;
+            }
+            if (scrolled <= 80) {
+                document.getElementById('hd5').style.opacity = 0;
+            }
+            if (scrolled <= 87.9 && scrolled >= 90.1) {
+                document.getElementById('hd5').style.opacity = (scrolled - 80.2) * 12 / 100;
+            }
+            if (scrolled <= 100 && scrolled >= 90.1) {
+                document.getElementById('hd5').style.opacity = (100 - scrolled) * 10 / 100;
+                if (scrolled >= 100) {
+                    document.getElementById('hd5').style.opacity = 0;
+                }
+            }
+
+
+        }
+
+
+    </script>
+</body>
+</html>
